@@ -1,0 +1,76 @@
+.clsCharacter {
+  background: rgb(60, 62, 68);
+  display: flex;
+  width: 21rem;
+  border-radius: 0.5rem;
+  height: 120px;
+  flex-direction: row;
+}
+
+.clsName {
+  font-size: 15px;
+  font-weight: 200;
+  color: rgb(245, 245, 245);
+}
+
+.clsStatus,
+.clsLocation,
+.clsOrigin {
+  font-size: 9px;
+  color: rgb(245, 245, 245);
+}
+
+.ellipsis {
+  color: rgb(245, 245, 245);
+}
+
+.clsLocation,
+.clsOrigin {
+  margin-top: 0.7rem;
+}
+
+img {
+  width: 7rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clsCard {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.grey-text {
+  color: rgb(158, 158, 158);
+}
+
+.clsStatusVal {
+  margin-left: 5px;
+}
+
+@media (max-width: 640px) {
+  .clsCharacter {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    height: auto;
+  }
+
+  .clsStatus,
+  .clsLocation,
+  .clsOrigin {
+    font-size: 12px;
+  }
+
+  .clsCard {
+    padding: 1rem;
+  }
+}

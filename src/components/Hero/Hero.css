@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(51, 51, 51);
+  border: none;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  margin-right: 1.75rem;
+  list-style: none;
+}
+
+logo {
+  float: left;
+}
+
+.clsTitle {
+  text-align: center;
+  margin: 0px;
+  color: rgb(32, 35, 41);
+  border: none;
+  font-weight: 900;
+  z-index: 1;
+  font-size: 3.625rem;
+  padding: 5rem 5rem 0rem 5rem;
+}
+
+.clsHero {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .clsTitle {
+    font-size: 2.625rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clsTitle {
+    font-size: 2.625rem;
+    padding: 3rem 3rem 3rem 3rem;
+  }
+}

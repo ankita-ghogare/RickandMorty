@@ -1,0 +1,12 @@
+.footer_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    background: rgb(32, 35, 41);
+    color: rgb(158, 158, 158);
+    padding: 4.5rem 0px;
+    width: 100%;
+    font-size: 9px;
+}

@@ -1,0 +1,103 @@
+.wrapper_Chars {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(39, 43, 51);
+}
+
+.container_characters {
+  background: rgb(39, 43, 51);
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1091px;
+}
+
+.container_div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.container_characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination_controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pagination_controls button,
+.pagination_controls .ellipsis {
+  padding: 5px 10px;
+  min-width: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pagination_controls button,
+  .pagination_controls .ellipsis {
+    padding: 3px 8px;
+    min-width: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination_controls button,
+  .pagination_controls .ellipsis {
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container_characters {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .container_characters {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .container_characters {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container_div {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_div {
+    max-width: 600px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container_div {
+    max-width: 100%;
+    padding: 1rem;
+  }
+}
